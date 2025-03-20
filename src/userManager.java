@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class userManager {
+public class UserManager {
 
   public static String userNumRan() {
     int ran1 = 0;
@@ -34,7 +34,10 @@ public class userManager {
     num = num1 + num2 + num3;
     return num;
   }
+  //회원가입
 
+
+//로그인
   public static String login(HashMap<String, Object> userMap) {
     String loginYn = null;
     Scanner sc = new Scanner(System.in);
@@ -66,7 +69,7 @@ public class userManager {
       System.out.println("로그아웃하였습니다.");
       return login;
     }
-    login = userManager.login(Main.userMap);
+    login = UserManager.login(Main.userMap);
     if (login == null) {
       System.out.println("로그인에 실패하였습니다. 홈으로 돌아갑니다.");
     }

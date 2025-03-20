@@ -6,7 +6,7 @@ public class Main {
   static List<HashMap<String,Object>> userInfoList = new ArrayList<>();
   static HashMap<String,Object> userMap = new HashMap<>();
   public static void main(String[] args) {
-    userManager userManager = new userManager();
+    UserManager userManager = new UserManager();
     User user = new User("qqqq","aaaa",userManager.userNumRan());
     Stock stock = new Stock();
     Product product = new Product();
