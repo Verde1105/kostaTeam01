@@ -26,7 +26,7 @@ public class User {
     HashMap<String,String> userMap = new HashMap<>();
     userMap.put("id",user.getId());
     userMap.put("pw",user.getPw());
-    userMap.put("usernum",getUserNum());
+    userMap.put("userNum",getUserNum());
     return userMap;
   }
 
